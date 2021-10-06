@@ -1,0 +1,74 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 0.6fr 1.4fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  align-content: stretch;
+  grid-template-areas:
+    "Title Title Title"
+    "LINK LINK LINK"
+    "Content Content Content"
+    "Content Content Content"
+    "Content Content Content"
+    "Footer Footer Footer";
+}
+
+.Title { grid-area: Title; }
+
+.LINK { grid-area: LINK; }
+
+.Content { grid-area: Content; }
+
+.Footer { grid-area: Footer; }
+
+.topnav {
+  background-color: rgb(46, 45, 45);
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(173, 172, 172);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {
+ width:100%;
+ margin: 0 auto;    
+ text-align: center;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
