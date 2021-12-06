@@ -1,2 +1,0 @@
-# arbeidsbok
-made ny me
